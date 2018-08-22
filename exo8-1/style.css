@@ -1,0 +1,21 @@
+body {
+    background-color: #333333;
+}
+div {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #285491;
+    
+}
+#userAgent {
+    font-size: 24px;
+    color: white;
+}
+#ip {
+    font-size: 24px;
+    color: white;
+}
+#serverName {
+    font-size: 24px;
+    color: white;
+}
