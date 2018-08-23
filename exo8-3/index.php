@@ -1,13 +1,15 @@
 <?php
-// isset vérifie que les login et password existent. 
-if (isset($_POST['login']) && isset($_POST['password'])) {
+// !empty vérifie que les login et password existent et ne sont pas vide. 
+if (!empty($_POST['login']) && !empty($_POST['password'])) {
     // Création du cookie, syntaxe IMPORTANTE pour la sécurité !
     setcookie('login', $_POST['login'], time() + 365 * 24 * 3600, '/', null, false, true);
+}
+// !empty vérifie que les login et password existent et ne sont pas vide.
+if (!empty($_POST['password'])) {   
     // Création du cookie, syntaxe IMPORTANTE pour la sécurité !
     setcookie('password', $_POST['password'], time() + 365 * 24 * 3600, '/', null, false, true);
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
     <head>

@@ -6,7 +6,6 @@ $_SESSION['prenom'] = 'John';
 $_SESSION['nom'] = 'Doe';
 $_SESSION['age'] = 25;
 ?>
-
 <!DOCTYPE html>
 <html>
     <head>
