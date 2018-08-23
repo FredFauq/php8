@@ -11,7 +11,7 @@ session_start(); // On démarre la session AVANT tout code HTML
     <body>
         <h1>Exercice 2  Partie 8</h1>
         <p>Re-bonjour !</p>
-        <!-- recupération et affichage avec $_SESSION des infos du visiteur -->
+        <!-- recupération et affichage avec $_SESSION des infos du visiteur acvec confition 'if' pour la sécurité -->
         <?php if(!empty($_SESSION['prenom'])) { ?>
         <p>Je me souviens de vous ! Vous êtes <?php echo $_SESSION['prenom']; } ?>
         <?php ?><?php if(!empty($_SESSION['nom'])) { echo $_SESSION['nom']; ?> !</p>
