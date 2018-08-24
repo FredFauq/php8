@@ -10,10 +10,19 @@
         <!-- Ouverture des balises PHP dans une balise <p> -->
         <p>
             <?php
-            // Vérification que les cookies existent.
-            if (isset($_COOKIE['login']) && isset($_COOKIE['password'])) {
-                // Affichage des cookies.
-                echo 'votre login est : ' . $_COOKIE['login'] . ', et votre mot de passe est : ' . $_COOKIE['password'];
+            // Vérification que le cookie existe.
+            if (!empty($_COOKIE['login'])) {
+                // Affichage du cookie.
+                echo 'votre login est : ' .  $_COOKIE['login'];
+            } else {
+                ?><p>Login invalide</p><?php   
+            }
+            // Vérification que le cookie existe.
+            if (!empty($_COOKIE['password'])) {
+                // Affichage du cookie.
+               echo ', et votre mot de passe est : ' .  $_COOKIE['password'];
+            } else {
+               ?><p>Mot de passe invalide</p><?php 
             }
             ?>
         </p>
